@@ -1,0 +1,50 @@
+.transition-effect{
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    transition: width 4s;
+    
+}
+.transition-effect:hover{
+    width: 100%;
+}
+.animation{
+    position:relative;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    animation-name: color;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+}
+@keyframes color{
+    0%{
+        top: 0;
+        left: 0;
+        background-color: aquamarine;
+    }
+    25%{
+        top: 0;
+        left: 200px;
+        right: 0;
+        background-color: blueviolet;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        bottom: 0;
+        background-color: chartreuse;
+    }
+    75%{
+        left: 0;
+        right: 200px;
+        top: 200px;
+        background-color: crimson;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: darkgreen;
+    }
+}
